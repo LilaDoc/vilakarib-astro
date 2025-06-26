@@ -831,7 +831,7 @@ h3{
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-image: url('/vilakarib/images/black-shadow-leaves-with-sunlight-white-backdrop.jpg'); /* Remplacez par le chemin correct vers votre image */
+  background-image: url('/images/black-shadow-leaves-with-sunlight-white-backdrop.jpg'); /* Remplacez par le chemin correct vers votre image */
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
@@ -1119,7 +1119,7 @@ h3{
     gap: 5rem;
     margin: 10rem;
     border-radius: 5px;
-    background-image: url('/vilakarib/images/shadow-leaves.jpg');
+    background-image: url('/images/shadow-leaves.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

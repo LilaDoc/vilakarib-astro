@@ -6,10 +6,10 @@ const VideoScreen = (props) => {
     <div className={styles.videoScreen}>
       <div className={styles.videoScreenContent}>
         <button onClick={() => props.setVideoOpen(false)}>
-          <img src="/vilakarib/images/close.svg" alt="Close" />
+          <img src="/images/close.svg" alt="Close" />
         </button>
         <video
-          src="/vilakarib/videos/website.mp4"
+          src="/videos/website.mp4"
           autoPlay
           muted
           loop

@@ -24,21 +24,21 @@ export default function About() {
             <div className={styles.cardContainer}>
               <div className={styles.card}>
                 <div className={styles.cardImage}>
-                  <img src="/vilakarib/images/person.svg" alt="About" className={styles.icon} />
+                  <img src="/images/person.svg" alt="About" className={styles.icon} />
                 </div>
                 <p>4-6</p>
                 <p>VOYAGEURS</p>
               </div>
               <div className={styles.card}>
                 <div className={styles.cardImage}>
-                  <img src="/vilakarib/images/bed.svg" alt="About" className={styles.icon} />
+                  <img src="/images/bed.svg" alt="About" className={styles.icon} />
                 </div>
                 <p>2</p>
                 <p>CHAMBRES</p> 
               </div>
               <div className={styles.card}>
                 <div className={styles.cardImage}>
-                  <img src="/vilakarib/images/shower.svg" alt="About" className={styles.icon} />
+                  <img src="/images/shower.svg" alt="About" className={styles.icon} />
                 </div>
                 <p>1</p>
                 <p>SDB</p>
@@ -51,7 +51,7 @@ export default function About() {
               <div className={styles.aboutServicesList}>
                 <div className={styles.aboutServicesItem }>
                     <div className={styles.aboutServicesItemImage}>
-                    <img src="/vilakarib/images/wifi.svg" alt="About" height={30} width={30} />
+                    <img src="/images/wifi.svg" alt="About" height={30} width={30} />
                   </div>
                   <p>
                     WIFI
@@ -59,7 +59,7 @@ export default function About() {
                 </div>
                 <div className={styles.aboutServicesItem}>
                   <div className={styles.aboutServicesItemImage}>
-                    <img src="/vilakarib/images/clim.svg" alt="About" height={30} width={30} />
+                    <img src="/images/clim.svg" alt="About" height={30} width={30} />
                   </div>
                   <p>
                     CLIMATISATION
@@ -67,7 +67,7 @@ export default function About() {
                 </div>
                 <div className={styles.aboutServicesItem}>
                   <div className={styles.aboutServicesItemImage}>
-                    <img src="/vilakarib/images/water.svg" alt="About" height={30} width={30} />
+                    <img src="/images/water.svg" alt="About" height={30} width={30} />
                   </div>
                   <p>
                     CITERNE D'EAU
@@ -77,7 +77,7 @@ export default function About() {
               <div className={styles.aboutServicesList}>
               <div className={styles.aboutServicesItem}>
                   <div className={styles.aboutServicesItemImage}>
-                    <img src="/vilakarib/images/car.svg" alt="About" height={30} width={30} />
+                    <img src="/images/car.svg" alt="About" height={30} width={30} />
                   </div>
                   <p>
                     PARKING
@@ -85,7 +85,7 @@ export default function About() {
                 </div>
                 <div className={styles.aboutServicesItem}>
                   <div className={styles.aboutServicesItemImage}>
-                    <img src="/vilakarib/images/yard.svg" alt="About" height={30} width={30} />
+                    <img src="/images/yard.svg" alt="About" height={30} width={30} />
                   </div>
                   <p>
                     JARDIN & TERRASSSE
@@ -93,7 +93,7 @@ export default function About() {
                 </div>
                 <div className={styles.aboutServicesItem}>
                   <div className={styles.aboutServicesItemImage}>
-                    <img src="/vilakarib/images/bebechambre.svg" alt="About" height={30} width={30} />
+                    <img src="/images/bebechambre.svg" alt="About" height={30} width={30} />
                   </div>
                   <p>
                     LIT BÉBÉ
@@ -103,7 +103,7 @@ export default function About() {
               <div className={styles.aboutServicesList}>
               <div className={styles.aboutServicesItem}>
                   <div className={styles.aboutServicesItemImage}>
-                    <img src="/vilakarib/images/lavelinge.svg" alt="About" height={30} width={30} />
+                    <img src="/images/lavelinge.svg" alt="About" height={30} width={30} />
                   </div>
                   <p>
                     LAVE-LINGE
@@ -111,7 +111,7 @@ export default function About() {
                 </div>
                 <div className={styles.aboutServicesItem}>
                   <div className={styles.aboutServicesItemImage}>
-                    <img src="/vilakarib/images/tv.svg" alt="About" height={30} width={30} />
+                    <img src="/images/tv.svg" alt="About" height={30} width={30} />
                   </div>
                   <p>
                     TV
@@ -119,7 +119,7 @@ export default function About() {
                 </div>
                 <div className={styles.aboutServicesItem}>
                   <div className={styles.aboutServicesItemImage}>
-                    <img src="/vilakarib/images/cafe.svg" alt="About" height={30} width={30} />
+                    <img src="/images/cafe.svg" alt="About" height={30} width={30} />
                   </div>
                   <p>
                     MACHINE À CAFÉ
