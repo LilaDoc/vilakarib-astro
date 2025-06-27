@@ -53,7 +53,7 @@ const Hero = () => {
             <Video />
         </div>
         <div className={`${styles.backgroundImage} ${styles.hidden}`}>
-            <img src="/images/hero.png" alt="hero" />
+            <img src="/vilakarib-astro/images/hero.png" alt="hero" />
         </div>
         <div className={styles.heroArrowTitleContainer}>
             <div className={styles.heroTitlesContainer}>

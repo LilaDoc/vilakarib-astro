@@ -9,7 +9,7 @@ export default function Location() {
                     <h3 className={styles.playfairDisplay}><span className="capitalize">L</span>ocalisation</h3>
                 </div> */}
                 <div className={styles.locationContent}>
-                    <img src="/images/map.png" alt="Map" className={styles.locationImage} />
+                    <img src="/vilakarib-astro/images/map.png" alt="Map" className={styles.locationImage} />
                 </div>
             </div>
         </section>
