@@ -13,7 +13,7 @@ const FullScreenImage = (props) => {
       <div className={styles.fullScreenImageContent}>
         <div className={styles.ScreenClose}>
           <button onClick={() => props.setFullScreenImageOpen(false)}>
-            <img src="/vilakarib-astro/images/close.svg" alt="Close" />
+            <img src="/images/close.svg" alt="Close" />
           </button>
         </div>
         <button

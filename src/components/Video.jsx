@@ -7,7 +7,7 @@ const Video = forwardRef((props, ref) => {
             <video
               ref={ref}
               className={styles.video}
-              src="/vilakarib-astro/videos/website.mp4"
+              src="/videos/website.mp4"
               autoPlay
               muted
               loop

@@ -6,7 +6,7 @@ const VideoScreen = (props) => {
       <div className="videoScreenContent">
         <div className="ScreenClose">
           <button onClick={() => props.setVideoOpen(false)}>
-            <img src="/vilakarib-astro/images/close.svg" alt="Close" />
+            <img src="/images/close.svg" alt="Close" />
           </button>
         </div>
         <iframe

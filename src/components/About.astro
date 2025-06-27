@@ -10,150 +10,110 @@ import styles from '../assets/App.module.css';
 
 <section class={styles.aboutSection} id="about">
   <div class={styles.aboutContainer}>
-    <div class={styles.aboutCarousel}>
-      <Caroussel client:only />
+    <div class={styles.aboutTitle}>
+      <h1>À propos de notre villa</h1>
     </div>
-    <div class={styles.aboutTextContainer}>
+    
+    <div class={styles.aboutContent}>
       <div class={styles.aboutText}>
-        <h3 class="playfairDisplay"><span class="capitalize">B</span>ienvenue à la Villa des K'ribean,</h3>
-        <p class="playfairDisplay">Une retraite d'exception au cœur d'un environnement paisible.<br/>
-        Nos deux chambres, la salle de bain moderne et le jardin vous garantissent tout le confort nécessaire pour un séjour mémorable. <br/><br/>
-        Venez explorer notre havre de paix, où le confort contemporain et la chaleur humaine se combinent pour offrir une expérience d'hébergement inoubliable.
-        </p>
+        <p>Découvrez notre villa de luxe située dans un cadre idyllique, offrant une expérience de séjour exceptionnelle avec des équipements de qualité et un service personnalisé.</p>
       </div>
-      <div class={styles.cardText}>
-        <div class={styles.cardContainer}>
-          <div class={styles.card}>
-            <div class={styles.cardImage}>
-              <img src="/vilakarib-astro/images/person.svg" alt="About" class="icon" />
-            </div>
-            <p>4-6</p>
-            <p>VOYAGEURS</p>
-          </div>
-          <div class={styles.card}>
-            <div class={styles.cardImage}>
-              <img src="/vilakarib-astro/images/bed.svg" alt="About" class="icon" />
-            </div>
-            <p>2</p>
-            <p>CHAMBRES</p> 
-          </div>
-          <div class={styles.card}>
-            <div class={styles.cardImage}>
-              <img src="/vilakarib-astro/images/shower.svg" alt="About" class="icon" />
-            </div>
-            <p>1</p>
-            <p>SDB</p>
-          </div>
+      
+      <div class={styles.aboutFeatures}>
+        <div class={styles.feature}>
+          <img src="/images/person.svg" alt="About" class="icon" />
+          <span>Capacité : 8 personnes</span>
+        </div>
+        
+        <div class={styles.feature}>
+          <img src="/images/bed.svg" alt="About" class="icon" />
+          <span>4 chambres confortables</span>
+        </div>
+        
+        <div class={styles.feature}>
+          <img src="/images/shower.svg" alt="About" class="icon" />
+          <span>3 salles de bain</span>
         </div>
       </div>
-
-      <div class={styles.aboutServices}>
-        <div class={styles.aboutServicesContent}>
-          <div class={styles.aboutServicesList}>
-            <div class={styles.aboutServicesItem}>
-              <div class={styles.aboutServicesItemImage}>
-                <img src="/vilakarib-astro/images/wifi.svg" alt="About" height="30" width="30" />
-              </div>
-              <p>WIFI</p>
-            </div>
-            <div class={styles.aboutServicesItem}>
-              <div class={styles.aboutServicesItemImage}>
-                <img src="/vilakarib-astro/images/clim.svg" alt="About" height="30" width="30" />
-              </div>
-              <p>CLIMATISATION</p>
-            </div>
-            <div class={styles.aboutServicesItem}>
-              <div class={styles.aboutServicesItemImage}>
-                <img src="/vilakarib-astro/images/water.svg" alt="About" height="30" width="30" />
-              </div>
-              <p>CITERNE D'EAU</p>
-            </div>
+      
+      <div class={styles.amenities}>
+        <h2>Équipements inclus</h2>
+        <div class={styles.amenitiesGrid}>
+          <div class={styles.amenity}>
+            <img src="/images/wifi.svg" alt="About" height="30" width="30" />
+            <span>WiFi gratuit</span>
           </div>
-          <div class={styles.aboutServicesList}>
-            <div class={styles.aboutServicesItem}>
-              <div class={styles.aboutServicesItemImage}>
-                <img src="/vilakarib-astro/images/car.svg" alt="About" height="30" width="30" />
-              </div>
-              <p>PARKING</p>
-            </div>
-            <div class={styles.aboutServicesItem}>
-              <div class={styles.aboutServicesItemImage}>
-                <img src="/vilakarib-astro/images/yard.svg" alt="About" height="30" width="30" />
-              </div>
-              <p>JARDIN & TERRASSSE</p>
-            </div>
-            <div class={styles.aboutServicesItem}>
-              <div class={styles.aboutServicesItemImage}>
-                <img src="/vilakarib-astro/images/bebechambre.svg" alt="About" height="30" width="30" />
-              </div>
-              <p>LIT BÉBÉ</p>
-            </div>
+          
+          <div class={styles.amenity}>
+            <img src="/images/clim.svg" alt="About" height="30" width="30" />
+            <span>Climatisation</span>
           </div>
-          <div class={styles.aboutServicesList}>
-            <div class={styles.aboutServicesItem}>
-              <div class={styles.aboutServicesItemImage}>
-                <img src="/vilakarib-astro/images/lavelinge.svg" alt="About" height="30" width="30" />
-              </div>
-              <p>LAVE-LINGE</p>
-            </div>
-            <div class={styles.aboutServicesItem}>
-              <div class={styles.aboutServicesItemImage}>
-                <img src="/vilakarib-astro/images/tv.svg" alt="About" height="30" width="30" />
-              </div>
-              <p>TV</p>
-            </div>
-            <div class={styles.aboutServicesItem}>
-              <div class={styles.aboutServicesItemImage}>
-                <img src="/vilakarib-astro/images/cafe.svg" alt="About" height="30" width="30" />
-              </div>
-              <p>MACHINE À CAFÉ</p>
-            </div>
+          
+          <div class={styles.amenity}>
+            <img src="/images/water.svg" alt="About" height="30" width="30" />
+            <span>Eau chaude</span>
+          </div>
+          
+          <div class={styles.amenity}>
+            <img src="/images/car.svg" alt="About" height="30" width="30" />
+            <span>Parking privé</span>
+          </div>
+          
+          <div class={styles.amenity}>
+            <img src="/images/yard.svg" alt="About" height="30" width="30" />
+            <span>Jardin privé</span>
+          </div>
+          
+          <div class={styles.amenity}>
+            <img src="/images/bebechambre.svg" alt="About" height="30" width="30" />
+            <span>Chambre bébé</span>
+          </div>
+          
+          <div class={styles.amenity}>
+            <img src="/images/lavelinge.svg" alt="About" height="30" width="30" />
+            <span>Machine à laver</span>
+          </div>
+          
+          <div class={styles.amenity}>
+            <img src="/images/tv.svg" alt="About" height="30" width="30" />
+            <span>Télévision</span>
+          </div>
+          
+          <div class={styles.amenity}>
+            <img src="/images/cafe.svg" alt="About" height="30" width="30" />
+            <span>Machine à café</span>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class={styles.aboutServicesContainer}>
-    <!-- Services title commented out in original -->
+    
+    <div class={styles.aroundSection}>
+      <h2>Autour de la villa</h2>
+      <div class={styles.aroundCards}>
+        <AroundCard 
+          title="Plage"
+          description="Profitez de nos plages de sable fin à quelques minutes de la villa"
+          image="/images/beach.jpg"
+        />
+        
+        <AroundCard 
+          title="Découverte"
+          description="Explorez les merveilles naturelles et culturelles de la région"
+          image="/images/decouverte.jpg"
+        />
+        
+        <AroundCard 
+          title="Aventure"
+          description="Partez à l'aventure avec nos activités outdoor et excursions"
+          image="/images/aventure.jpg"
+        />
+      </div>
+    </div>
   </div>
 
   <div class={styles.reservation} id="reservation">
     <div class={styles.reservationContent}>
       <ButtonReservationBlack client:load />
-    </div>
-  </div>
-
-  <div class={styles.around}>
-    <div class={styles.aroundContainer}>
-      <div class={styles.aroundTitle}>
-        <h3 class="playfairDisplay"><span class="capitalize">V</span>isitez la Guadeloupe</h3>
-      </div>
-      <div class={styles.aroundCards}>
-        <AroundCard 
-          link="https://fr.guadeloupe-tourisme.com/100/plage-des-alizes-le-moule/" 
-          image="/vilakarib-astro/images/beach.jpg" 
-          text="La plage des Alizés, idéale pour petits et grands : baignade paisible, jeux sur le sable et couchers de soleil magiques." 
-          distance="2,6km" 
-          title="Plage des Alizées" 
-          client:load
-        />
-        <AroundCard 
-          link="https://rhum-damoiseau.com/" 
-          image="/vilakarib-astro/images/decouverte.jpg" 
-          text="Partez à la rencontre du rhum local : distillerie traditionnelle, parfums envoûtants et savoir-faire créole à découvrir absolument." 
-          distance="3km" 
-          title="Distillerie Damoiseau" 
-          client:load
-        />
-        <AroundCard 
-          link="https://www.guadeloupe-islands.com/les-iles/les-saintes/les-saintes-guadeloupe.html" 
-          image="/vilakarib-astro/images/aventure.jpg" 
-          text="Plongez au cœur de la forêt tropicale : la cascade des Écrevisses vous offre fraîcheur, beauté sauvage et sérénité pure." 
-          distance="50km" 
-          title="Cascade des écrevisses"
-          client:load
-        />
-      </div>
     </div>
   </div>
 </section> 
