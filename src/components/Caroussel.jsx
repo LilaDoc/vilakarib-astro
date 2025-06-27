@@ -65,7 +65,7 @@ const Caroussel = () => {
                     nextImage={nextSlide}
                     prevImage={prevSlide}
                 />}
-                <div className={styles.slideContainer} onClick={handleImageClick}>
+                <div className={styles.slideContainer}>
                     <div 
                         className={styles.slideWrapper} 
                         style={{ 

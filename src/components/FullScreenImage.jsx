@@ -1,13 +1,19 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styles from '../assets/App.module.css';
 
 const FullScreenImage = (props) => {
+  const handleBackgroundClick = (e) => {
+    if (e.target === e.currentTarget) {
+      props.setFullScreenImageOpen(false);
+    }
+  };
+
   return (
-    <div className={styles.fullScreenImage} onClick={props.handleClick}>
+    <div className={styles.fullScreenImage} onClick={handleBackgroundClick}>
       <div className={styles.fullScreenImageContent}>
         <div className={styles.ScreenClose}>
           <button onClick={() => props.setFullScreenImageOpen(false)}>
-            <img src="/images/close.svg" alt="Close" className={styles.closeIcon} />
+            <img src="/images/close.svg" alt="Close" />
           </button>
         </div>
         <button
