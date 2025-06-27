@@ -3,9 +3,9 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
   integrations: [react()],
-  // Configuration pour GitHub Pages avec domaine personnalisé
+  // Configuration pour GitHub Pages
   site: 'https://villadesk-ribean.com',
-  base: '/', // Racine du domaine personnalisé
+  base: '/vilakarib-astro/', // Base path pour GitHub Pages
   build: {
     assets: '_astro'
   },
