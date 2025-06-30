@@ -62,7 +62,7 @@ const Hero = () => {
                   ref={heroTitleRef}
                   className={`${styles.heroTitle} ${(isHeroTitleVisible && imageLoaded) ? styles.showApparition : styles.hiddenApparition}`}
                 >   
-                    <span className="capitalize">V</span>ILLA K'RIBEAN
+                    <span className="capitalize">V</span>ILLA DES K'RIBEAN
                 </h1>
                 
                 </div>
