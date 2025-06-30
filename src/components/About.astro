@@ -5,115 +5,155 @@ import '../assets/main.css';
 import Caroussel from './Caroussel.jsx';
 import AroundCard from './AroundCard.jsx';
 import ButtonReservationBlack from './ButtonReservationBlack.jsx';
-import styles from '../assets/App.module.css';
 ---
 
-<section class={styles.aboutSection} id="about">
-  <div class={styles.aboutContainer}>
-    <div class={styles.aboutTitle}>
-      <h1>À propos de notre villa</h1>
-    </div>
-    
-    <div class={styles.aboutContent}>
-      <div class={styles.aboutText}>
-        <p>Découvrez notre villa de luxe située dans un cadre idyllique, offrant une expérience de séjour exceptionnelle avec des équipements de qualité et un service personnalisé.</p>
-      </div>
-      
-      <div class={styles.aboutFeatures}>
-        <div class={styles.feature}>
-          <img src="/images/person.svg" alt="About" class="icon" />
-          <span>Capacité : 8 personnes</span>
+<section class="aboutSection" id="about">
+      <div class="aboutContainer">
+        <div class="aboutCarousel">
+            <Caroussel client:only/>
         </div>
-        
-        <div class={styles.feature}>
-          <img src="/images/bed.svg" alt="About" class="icon" />
-          <span>4 chambres confortables</span>
-        </div>
-        
-        <div class={styles.feature}>
-          <img src="/images/shower.svg" alt="About" class="icon" />
-          <span>3 salles de bain</span>
-        </div>
-      </div>
-      
-      <div class={styles.amenities}>
-        <h2>Équipements inclus</h2>
-        <div class={styles.amenitiesGrid}>
-          <div class={styles.amenity}>
-            <img src="/images/wifi.svg" alt="About" height="30" width="30" />
-            <span>WiFi gratuit</span>
+        <div class="aboutTextContainer">
+          <div class="aboutText">
+            <h3 class="playfairDisplay"><span class="capitalize">B</span>ienvenue à la Villa des K&apos;ribean,</h3>
+            <p class="playfairDisplay">Une retraite d&apos;exception au cœur d&apos;un environnement paisible.<br/>
+            Nos deux chambres, la salle de bain moderne et le jardin vous garantissent tout le confort nécessaire pour un séjour mémorable. <br/><br/>
+            Venez explorer notre havre de paix, où le confort contemporain et la chaleur humaine se combinent pour offrir une expérience d&apos;hébergement inoubliable.
+            </p>
           </div>
-          
-          <div class={styles.amenity}>
-            <img src="/images/clim.svg" alt="About" height="30" width="30" />
-            <span>Climatisation</span>
+          <div class="cardText">
+            <div class="cardContainer">
+              <div class="card">
+                <div class="cardImage">
+                  <img src="/images/person.svg" alt="About" class="icon" />
+                </div>
+                <p>4-6</p>
+                <p>VOYAGEURS</p>
+              </div>
+              <div class="card">
+                <div class="cardImage">
+                  <img src="/images/bed.svg" alt="About" class="icon" />
+                </div>
+                <p>2</p>
+                <p>CHAMBRES</p> 
+              </div>
+              <div class="card">
+                <div class="cardImage">
+                  <img src="/images/shower.svg" alt="About" class="icon" />
+                </div>
+                <p>1</p>
+                <p>SDB</p>
+              </div>
+            </div>
           </div>
-          
-          <div class={styles.amenity}>
-            <img src="/images/water.svg" alt="About" height="30" width="30" />
-            <span>Eau chaude</span>
-          </div>
-          
-          <div class={styles.amenity}>
-            <img src="/images/car.svg" alt="About" height="30" width="30" />
-            <span>Parking privé</span>
-          </div>
-          
-          <div class={styles.amenity}>
-            <img src="/images/yard.svg" alt="About" height="30" width="30" />
-            <span>Jardin privé</span>
-          </div>
-          
-          <div class={styles.amenity}>
-            <img src="/images/bebechambre.svg" alt="About" height="30" width="30" />
-            <span>Chambre bébé</span>
-          </div>
-          
-          <div class={styles.amenity}>
-            <img src="/images/lavelinge.svg" alt="About" height="30" width="30" />
-            <span>Machine à laver</span>
-          </div>
-          
-          <div class={styles.amenity}>
-            <img src="/images/tv.svg" alt="About" height="30" width="30" />
-            <span>Télévision</span>
-          </div>
-          
-          <div class={styles.amenity}>
-            <img src="/images/cafe.svg" alt="About" height="30" width="30" />
-            <span>Machine à café</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class={styles.aroundSection}>
-      <h2>Autour de la villa</h2>
-      <div class={styles.aroundCards}>
-        <AroundCard 
-          title="Plage"
-          description="Profitez de nos plages de sable fin à quelques minutes de la villa"
-          image="/images/beach.jpg"
-        />
-        
-        <AroundCard 
-          title="Découverte"
-          description="Explorez les merveilles naturelles et culturelles de la région"
-          image="/images/decouverte.jpg"
-        />
-        
-        <AroundCard 
-          title="Aventure"
-          description="Partez à l'aventure avec nos activités outdoor et excursions"
-          image="/images/aventure.jpg"
-        />
-      </div>
-    </div>
-  </div>
 
-  <div class={styles.reservation} id="reservation">
-    <div class={styles.reservationContent}>
-      <ButtonReservationBlack client:load />
-    </div>
-  </div>
-</section> 
+        <div class="aboutServices">
+          <div class="aboutServicesContent">
+              <div class="aboutServicesList">
+                <div class="aboutServicesItem">
+                    <div class="aboutServicesItemImage">
+                    <img src="/images/wifi.svg" alt="About" height={30} width={30} />
+                  </div>
+                  <p>
+                    WIFI
+                  </p>
+                </div>
+                <div class="aboutServicesItem">
+                  <div class="aboutServicesItemImage">
+                    <img src="/images/clim.svg" alt="About" height={30} width={30} />
+                  </div>
+                  <p>
+                    CLIMATISATION
+                  </p>
+                </div>
+                <div class="aboutServicesItem">
+                  <div class="aboutServicesItemImage">
+                    <img src="/images/water.svg" alt="About" height={30} width={30} />
+                  </div>
+                  <p>
+                    CITERNE D'EAU
+                  </p>
+                </div>
+              </div>
+              <div class="aboutServicesList">
+              <div class="aboutServicesItem">
+                  <div class="aboutServicesItemImage">
+                    <img src="/images/car.svg" alt="About" height={30} width={30} />
+                  </div>
+                  <p>
+                    PARKING
+                  </p>
+                </div>
+                <div class="aboutServicesItem">
+                  <div class="aboutServicesItemImage">
+                    <img src="/images/yard.svg" alt="About" height={30} width={30} />
+                  </div>
+                  <p>
+                    JARDIN & TERRASSSE
+                  </p>
+                </div>
+                <div class="aboutServicesItem">
+                  <div class="aboutServicesItemImage">
+                    <img src="/images/bebechambre.svg" alt="About" height={30} width={30} />
+                  </div>
+                  <p>
+                    LIT BÉBÉ
+                  </p>
+                </div>
+              </div>
+              <div class="aboutServicesList">
+              <div class="aboutServicesItem">
+                  <div class="aboutServicesItemImage">
+                    <img src="/images/lavelinge.svg" alt="About" height={30} width={30} />
+                  </div>
+                  <p>
+                    LAVE-LINGE
+                  </p>
+                </div>
+                <div class="aboutServicesItem">
+                  <div class="aboutServicesItemImage">
+                    <img src="/images/tv.svg" alt="About" height={30} width={30} />
+                  </div>
+                  <p>
+                    TV
+                  </p>
+                </div>
+                <div class="aboutServicesItem">
+                  <div class="aboutServicesItemImage">
+                    <img src="/images/cafe.svg" alt="About" height={30} width={30} />
+                  </div>
+                  <p>
+                    MACHINE À CAFÉ
+                  </p>
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="aboutServicesContainer">
+        <!-- <div class="aboutServicesTitle">
+            <h3 class="playfairDisplay"><span class="capitalize">A</span> votre disposition</h3>
+        </div> -->
+
+      </div>
+
+        <div class="reservation" id="reservation">
+          <div class="reservationContent">
+            <ButtonReservationBlack/>
+          </div>
+        </div>
+
+      <div class="around">
+        <div class="aroundContainer">
+          <div class="aroundTitle">
+            <h3 class="playfairDisplay"><span class="capitalize">V</span>isitez la Guadeloupe</h3>
+          </div>
+          <div class="aroundCards">
+            <AroundCard link="https://fr.guadeloupe-tourisme.com/100/plage-des-alizes-le-moule/" image="/images/beach.jpg" text="La plage des Alizés, idéale pour petits et grands : baignade paisible, jeux sur le sable et couchers de soleil magiques." distance="2,6km" title="Plage des Alizées" />
+            <AroundCard link="https://rhum-damoiseau.com/" image="/images/decouverte.jpg" text="Partez à la rencontre du rhum local : distillerie traditionnelle, parfums envoûtants et savoir-faire créole à découvrir absolument." distance="3km" title="Distillerie Damoiseau" />
+            <AroundCard link="https://www.tripadvisor.fr/Attraction_Review-g147305-d148906-Reviews-Cascade_aux_Ecrevisses-Parc_National_Basse_Terre_Island_Guadeloupe.html" image="/images/aventure.jpg" text="Plongez au cœur de la forêt tropicale : la cascade des Écrevisses vous offre fraîcheur, beauté sauvage et sérénité pure." distance="50km" title="Cascade des écrevisses"/>
+          </div>
+        </div>
+      </div>
+    </section>
+</code_block_to_apply_changes_from>
