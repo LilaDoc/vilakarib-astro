@@ -6,7 +6,7 @@ export default function AroundCard(props) {
     <div className="aroundCard">
       <div className="aroundCardImage">
         <div className="aroundImage">
-          <img src={props.image} alt="About" />
+          <img src={props.image} alt={props.title} />
         </div>
       </div>
       <div className="aroundCardContent">

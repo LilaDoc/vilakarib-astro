@@ -16,6 +16,7 @@ const VideoScreen = (props) => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
           className="videoScreenFrame"
+          alt="image de la villa des k'ribean"
         />
       </div>
     </div>
