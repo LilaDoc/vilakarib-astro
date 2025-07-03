@@ -54,15 +54,16 @@
 }
 .heroTitlesContainer {
 
-  grid-column: 3 / 4;
+  grid-column: 2 / 4;
   grid-row: 2 / 3;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   gap: 0;
+  
   
 }
 .heroTitleContainer {
@@ -74,6 +75,7 @@
   height: 100%;
   margin: 0;
   padding: 0;
+  padding-left: 30%;
 }
 .heroTitle {
   font-size: clamp(32px, 5vw, 64px);
@@ -116,6 +118,7 @@
   .heroTitlesContainer {
 
     grid-column: 2 / 4;
+    padding-left: 0;
   }
 }
 @media (max-width: 1500px) {
@@ -140,6 +143,7 @@
     flex-direction: column;
     align-items: center !important;
     justify-content: center;
+    padding: 0 !important;
    }
    .heroTitleContainer{
     height: 40%;
@@ -199,5 +203,19 @@
   .heroSubtitleContainer{
     display: none;
   }
-
+  .heroTitleContainer{
+    padding-left: 0;
+  }
+  .heroTitle{
+    font-size: clamp(48px, 5vw, 64px);
+  }
+  .heroArrowTitleContainer{
+    padding: 0;
+  }
+  .heroTitlesContainer{
+    padding: 0;
+  }
+  .capitalize{
+    font-size: clamp(48px, 5vw, 64px) !important;
+  }
 }

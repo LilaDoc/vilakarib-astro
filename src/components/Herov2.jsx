@@ -60,7 +60,7 @@ const Hero = () => {
                 <div className={styles.heroTitleContainer}>
                 <h1 
                   ref={heroTitleRef}
-                  className={`${styles.heroTitle} ${(isHeroTitleVisible && imageLoaded) ? styles.showApparition : styles.hiddenApparition}`}
+                  className={`${styles.heroTitle} ${(isHeroTitleVisible && imageLoaded) ? styles.showApparition : styles.hiddenApparition} playfairDisplay`}
                 >   
                     <span className="capitalize">V</span>ILLA DES K'RIBEAN
                 </h1>

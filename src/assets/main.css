@@ -1469,6 +1469,9 @@ h3{
   .mobileVideoButton {
     display: flex;
   }
+  .capitalize{
+    font-size: 64px !important;
+  }
 }
 
   @media screen and (max-width: 768px) {
@@ -1582,6 +1585,9 @@ h3{
     
     .aboutContainer{
       margin: 0;
+    }
+    .capitalize{
+      font-size: 48px !important;
     }
     
   }
@@ -2244,6 +2250,9 @@ h3{
   }
   .mobileVideoButton {
     display: flex;
+  }
+  .capitalize{
+    font-size: 64px !important;
   }
 }
 
