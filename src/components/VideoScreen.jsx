@@ -10,7 +10,7 @@ const VideoScreen = (props) => {
           </button>
         </div>
         <iframe
-          src="https://www.youtube.com/embed/vuApAB0VHjo?autoplay=1&mute=0&loop=1&playlist=vuApAB0VHjo"
+          src="https://youtu.be/7pj6ePbFBdU"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
