@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import styles from '../assets/Hero.module.css';
+import styles from '../assets/New_Hero.module.css';
 import Video from './Video';
 import Arrow from './Down-arrow';
 import VideoScreen from './VideoScreen';
@@ -47,41 +47,39 @@ const Hero = () => {
     {videoOpen && <VideoScreen videoOpen={videoOpen} setVideoOpen={setVideoOpen} />}
     <section className={styles.hero} id="hero">
       <MobileReservationButton />
-      
-      <div className={`${styles.backgroundVideo} ${styles.show}`}
+      <div className={`${styles.backgroundVideo} `}
              onLoad={() => setImageLoaded(true)}>
             <Video />
-        </div>
-        <div className={`${styles.backgroundImage} ${styles.hidden}`}>
-            <img src="/images/hero.png" alt="hero" />
-        </div>
-        <div className={styles.heroArrowTitleContainer}>
-            <div className={styles.heroTitlesContainer}>
-                <div className={styles.heroTitleContainer}>
+      </div>
+        {/* <div className={`${styles.backgroundImage} ${styles.hidden}`}>
+            <img src="/images/hero.png" alt="Guadeloupe" />
+        </div> */}
+      <div className={styles.heroArrowTitleContainer}>
+        <div className={styles.heroTitlesContainer}>
+            <div className={styles.heroTitleContainer}>
                 <h1 
                   ref={heroTitleRef}
                   className={`${styles.heroTitle} ${(isHeroTitleVisible && imageLoaded) ? styles.showApparition : styles.hiddenApparition} playfairDisplay`}
                 >   
                     <span className="capitalize">V</span>ILLA DES K'RIBEAN
                 </h1>
-                
-                </div>
-                <MobileVideoButton setVideoOpen={setVideoOpen} />
-                <div className={styles.heroSubtitleContainer}>
+            </div>
+            {/* <MobileVideoButton setVideoOpen={setVideoOpen} /> */}
+            <div className={styles.heroSubtitleContainer}>
                     <h2 
                       ref={heroSubtitleRef}
                       className={`${styles.heroSubtitle} ${(isHeroSubtitleVisible && imageLoaded) ? styles.showApparition : styles.hiddenApparition}`}
                     >
                         LOCATION DE VACANCES AU MOULE
                     </h2>
-                    <CallToAction />
+                    {/* <CallToAction /> */}
                     <VideoButton videoOpen={videoOpen} setVideoOpen={setVideoOpen} />
-                </div>
             </div>
-            <div className={styles.heroArrow}>
+            <div className={`${styles.heroArrow} ${styles.hidden}`}>
                 <a href="#about"><Arrow color="#ffffff" width="100" height="100" /></a>
             </div>
         </div>
+      </div>
     </section>
     </>
   );

@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import styles from '../assets/App.module.css'
+import styles from '../assets/New_video.module.css'
 
 const Video = forwardRef((props, ref) => {
     return (
