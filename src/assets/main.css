@@ -1248,7 +1248,7 @@ h3{
     }
 
     .aboutContainer {
-      flex-direction: column;
+      /* flex-direction: column; */
       padding: 2rem;
       padding-bottom: 0;
     }
@@ -1274,13 +1274,13 @@ h3{
     }
 
     .aboutServicesContent {
-      flex-direction: column;
+      /* flex-direction: column; */
     }
 
     .aboutServicesList {
-      border-left: none;
+      /* border-left: none;
       border-top: 1px solid black;
-      padding: 2rem;
+      padding: 2rem; */
     }
 
     .aboutServicesList:first-child {
@@ -1321,6 +1321,10 @@ h3{
       font-size: 18px;
     }
 
+    .icon{
+      width: 32px;
+      height: 32px;
+    }
   }
   @media screen and (max-width: 1330px) {
     .hero h1 {
