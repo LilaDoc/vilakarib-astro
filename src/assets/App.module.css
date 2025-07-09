@@ -10,6 +10,7 @@
   --breakpoint-xl: 1200px;  /* Extra large devices */
   --breakpoint-xxl: 1504px; /* 2XL devices */
   --breakpoint-xxxl: 1998px;/* 3XL devices */
+  --breakpoint-4k: 3840px;  /* 4K devices */
 
   /* Colors */
   --color-primary: #353535;
@@ -411,6 +412,13 @@
   padding: 0;
   width: 100%;
   height: 900px;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .videoSection h2 {
@@ -2307,5 +2315,64 @@ h3{
 @media screen and (max-width: 840px) {
   .mobileReservationButton {
     display: flex;
+  }
+}
+
+/* 4K Display Optimization */
+@media screen and (min-width: var(--breakpoint-4k)) {
+  .videoSection {
+    height: 1200px;
+  }
+  
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+  
+  .hero h1 {
+    font-size: 96px;
+  }
+  
+  .heroText h2 {
+    font-size: 48px;
+  }
+  
+  .aboutContainer {
+    margin: 8rem;
+  }
+  
+  .aboutCarousel {
+    width: 1000px;
+    height: 700px;
+  }
+  
+  .card {
+    padding: 3rem;
+  }
+  
+  .card p {
+    font-size: 24px;
+  }
+  
+  .aboutServicesTitle h2 {
+    font-size: 48px;
+  }
+  
+  .aboutServicesItem p {
+    font-size: 20px;
+  }
+  
+  .aroundTitle h3 {
+    font-size: 36px;
+  }
+  
+  .contactContainer h2 {
+    font-size: 48px;
+  }
+  
+  .contactContainer p {
+    font-size: 24px;
   }
 }

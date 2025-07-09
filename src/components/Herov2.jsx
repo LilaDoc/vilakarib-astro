@@ -66,7 +66,7 @@ const Hero = () => {
                 </h1>
                 
                 </div>
-                <MobileVideoButton setVideoOpen={setVideoOpen} />
+                {/* <MobileVideoButton setVideoOpen={setVideoOpen} /> */}
                 <div className={styles.heroSubtitleContainer}>
                     <h2 
                       ref={heroSubtitleRef}
