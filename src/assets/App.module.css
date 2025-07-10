@@ -523,6 +523,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: auto;
  }
 .aboutCarousel {
   width: 750px;
@@ -532,6 +533,7 @@
   border-radius: 5px;
   /* overflow: hidden; */
 }
+
 .slideMarkerItem {
   width: 10px;
   height: 10px;
@@ -1176,6 +1178,11 @@ h3{
     top: 100%;
   }
 }
+@media screen and (max-width: 1800px) {
+  .heroTitleContainer{
+    padding: 0;
+  }
+}
   /* Media Queries pour le responsive */
   @media screen and (max-width: 1504px) {
     /* .heroText {
@@ -1247,7 +1254,7 @@ h3{
       padding: 0;
       margin: 0;
     }
-    .aroundTitle h3 {
+    .aroundTitle h1 {
       font-size: 32px;
     }
     
@@ -1301,14 +1308,11 @@ h3{
       top: 60%;
     }
   }
-  @media screen and (max-width: 1000px) {
+  /* @media screen and (max-width: 1000px) {
     .hero h1 {
       top: 40%;
       font-size:40px;
-      /* margin-top: 0;
-      margin-bottom: 0;
-      padding-top: 0;
-      padding-bottom: 0; */
+
       background-color: transparent;
     }
     .heroButton {
@@ -1321,7 +1325,7 @@ h3{
     .landing{
       height: 70vh;
     }
-  }
+  } */
   @media screen and (max-width: 840px) {
     .cardContainer {
       justify-content: center;
@@ -1414,13 +1418,13 @@ h3{
   .heroText h2 {
     display: none;
   }
-  .hero h1 {
+  /* .hero h1 {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.4);
     height: 40%;
-  }
+  } */
   .heroButton {
     top: 80%;
   }
@@ -1437,9 +1441,9 @@ h3{
 }
 
   @media screen and (max-width: 768px) {
-    .hero h1 {
+    /* .hero h1 {
       font-size: 40px;
-    }
+    } */
   
 
     .decouverteTitle h2, .aventureTitle h2, .contactContainer h2 {
@@ -1563,21 +1567,23 @@ h3{
 
   .slideContainer {
       width: 100%;
-      height: 100%;
+      height: auto;
       overflow: hidden;
       position: relative;
+      aspect-ratio: 16/9;
   }
 
   .slideWrapper {
       display: flex;
       width: 100%;
-      height: 100%;
+      height: auto;
       transition: transform 0.5s ease-in-out;
+      aspect-ratio: 16/9;
   }
 
   .slide {
       min-width: 100%;
-      height: 100%;
+      height: auto;
       object-fit: cover;
   }
 
@@ -1696,18 +1702,18 @@ h3{
   .reservationContent {
     flex-direction: column;
   }
-  .slideWrapper{
+  /* .slideWrapper{
     height: 500px;
-  }
+  } */
 }
 
 /* Media query spécifique pour la dimension paysage 1080px x 810px */
 @media only screen and (width: 1080px) and (height: 810px), 
        only screen and (width: 810px) and (height: 1080px) and (orientation: landscape) {
   /* Styles pour About section similaires à max-width: 840px */
-  .hero h1 {
+  /* .hero h1 {
     top: 70%;
-  }
+  } */
   .cardContainer {
     justify-content: center;
     align-items: center;
@@ -2033,13 +2039,13 @@ h3{
     display: none;
   }
   
-  .hero h1 {
+  /* .hero h1 {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--color-overlay);
     height: 40%;
-  }
+  } */
   
   .heroButton {
     top: 80%;
@@ -2374,5 +2380,12 @@ h3{
   
   .contactContainer p {
     font-size: 24px;
+  }
+}
+
+/* videoButton */
+@media (max-width: 750px) {
+  .videoButtonText{
+    font-size: 14px;
   }
 }

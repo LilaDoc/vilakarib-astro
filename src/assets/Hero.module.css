@@ -70,15 +70,14 @@
   
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  padding-left: 30%;
 }
 .heroTitle {
-  font-size: clamp(32px, 5vw, 64px);
+  font-size: 64px;
   font-weight: 400;
   color: #ffffff;
   transition: all 0.8s ease-in-out;
@@ -129,14 +128,7 @@
   } */
 }
 @media (max-width: 1270px) {
-  /* .heroTitle{
-    color: #000000;
-    transition: all 0.8s ease-in-out;
-  } */
-  /* .heroSubtitle{
-    color: #000000;
-    transition: all 0.8s ease-in-out;
-  } */
+
    .heroTitlesContainer{
     grid-column: 1 / 4;
     grid-row: 1 / 4;
@@ -145,8 +137,10 @@
     justify-content: center;
     padding: 0 !important;
    }
+
    .heroTitleContainer{
     height: 40%;
+    justify-content: center;
    }
    .heroSubtitleContainer{
     align-self: center;
@@ -198,11 +192,25 @@
     padding: 1rem;
     width: 100%;
   }
+  .heroTitle span{
+    font-size: 8rem !important;
+  }
+  .heroSubtitle{
+    text-align: center;
+  }
+}
+@media (max-width: 750px) {
+  .heroTitle span{
+    font-size: 6rem !important;
+  }
+  .heroTitle{
+    font-size: 48px;
+  }
 }
 @media (max-width: 600px) {
-  .heroSubtitleContainer{
+  /* .heroSubtitleContainer{
     display: none;
-  }
+  } */
   .heroTitleContainer{
     padding-left: 0;
   }
@@ -218,4 +226,26 @@
   .capitalize{
     font-size: clamp(48px, 5vw, 64px) !important;
   }
+}
+
+@media (max-width: 570px) {
+  .heroTitle{
+    font-size: 32px;
+  }
+  .heroSubtitle{
+    font-size: 14px;
+  }
+  .heroSubtitleContainer{
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 430px) {
+  .heroTitle{
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 370px) {
+
 }

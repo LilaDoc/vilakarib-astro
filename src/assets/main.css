@@ -555,7 +555,7 @@ a {
   justify-content: center;
   width: 100%;
   height: 100%;
-  margin: 5rem;
+  /* margin: 5rem; */
 
 
 }
@@ -572,10 +572,12 @@ a {
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: auto;
+  gap: 0;
  }
 .aboutCarousel {
   width: 750px;
-  height: 500px;
+  height: auto;
   margin: 2rem;
   margin-left: 2rem;
   border-radius: 5px;
@@ -731,6 +733,16 @@ h3{
   padding: 0rem;
 }
 
+.aboutInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: auto;
+  padding: 0rem;
+}
+
 .aboutServices {
   display: flex;
   flex-direction: column;
@@ -747,6 +759,12 @@ h3{
   margin: 0;
   padding: 0;
 
+}
+.hideBelow1504px {
+  display: block; 
+}
+.showBelow1504px {
+  display: none; 
 }
 .aboutServicesTitle {
   position: absolute;
@@ -1255,7 +1273,8 @@ h3{
 
     .aboutCarousel, .aboutTextContainer {
       width: 100%;
-      max-width: 620px;
+      max-width: 480px;
+      height: auto;
       margin: 1rem;
       flex: 1;
     }
@@ -1264,31 +1283,55 @@ h3{
       align-items: center;
       justify-content: center;
     }
+    .aboutContainer{
+      padding: 0;
+      margin: 0;
+    }
+    .aboutInfo{
+      padding-bottom: 2rem;
+    }
 
     .aboutText {
       padding: 2rem;
+    }
+    .aboutText h3{
+      font-size: 24px;
+    }
+    .aboutText span{
+      font-size: 48px;
+    }
+    .aboutText p{
+      font-size: 18px;
     }
 
     .aboutServicesTitle h2 {
       font-size: 24px;
     }
 
-    .aboutServicesContent {
-      /* flex-direction: column; */
+    .card p{
+      font-size: 14px;
     }
 
-    .aboutServicesList {
-      /* border-left: none;
-      border-top: 1px solid black;
-      padding: 2rem; */
-    }
+    .aboutServicesContent{
+      padding: 0;
+      margin: 0;
+      margin-top: 1rem;
 
+    }
+    .aboutServicesList{
+
+      padding-top:1rem;
+    }
     .aboutServicesList:first-child {
       border-top: none;
     }
 
-    .aboutServicesItem {
-      font-size: 16px;
+    .aboutServicesItem p{
+      font-size: 14px;
+    }
+    .aboutServicesItem img{
+      width: 20px;
+      height: 20px;
     }
 
     .aroundTitle {
@@ -1302,10 +1345,11 @@ h3{
     .aroundTitle h3 {
       font-size: 32px;
     }
+
     
 
     .aroundCards {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       justify-content: center;
       height: auto;
@@ -1315,15 +1359,26 @@ h3{
       height: auto;
     }
     .aroundCard h4 {
-      font-size:24px;
+      font-size:20px;
     }
     .aroundCard p {
-      font-size: 18px;
+      font-size: 14px;
+    }
+    .aroundText{
+      padding: 0;
+      margin: 0;
+      margin-top: 1rem;
     }
 
     .icon{
       width: 32px;
       height: 32px;
+    }
+    .hideBelow1504px{
+      display: none;
+    }
+    .showBelow1504px{
+      display: block;
     }
   }
   @media screen and (max-width: 1330px) {
@@ -1357,14 +1412,11 @@ h3{
       top: 60%;
     }
   }
-  @media screen and (max-width: 1000px) {
+  /* @media screen and (max-width: 1000px) {
     .hero h1 {
       top: 40%;
       font-size:40px;
-      /* margin-top: 0;
-      margin-bottom: 0;
-      padding-top: 0;
-      padding-bottom: 0; */
+
       background-color: transparent;
     }
     .heroButton {
@@ -1377,12 +1429,24 @@ h3{
     .landing{
       height: 70vh;
     }
-  }
+
+    .aroundCards{
+      flex-direction: column;
+    }
+    .aroundCard{
+      width: 100%;
+      height: auto;
+    }
+  } */
   @media screen and (max-width: 840px) {
+    .aboutContainer{
+      flex-direction: column;
+    }
     .cardContainer {
       justify-content: center;
       align-items: center;
       width: 100%;
+      
       /* flex-wrap: wrap; */
       gap: 1rem;
     }
@@ -1501,45 +1565,7 @@ h3{
     }
   
 
-    .decouverteTitle h2, .aventureTitle h2, .contactContainer h2 {
-      font-size: 32px;
-    }
 
-    .decouverteContent, .aventureContent {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 2rem;
-    }
-
-    .decouverteImage, .aventureImage {
-      margin: 2rem 0;
-    }
-
-    .decouverteText, .aventureText {
-      width: 100%;
-      margin: 2rem 0;
-      text-align: center;
-    }
-
-    .decouverteTitle, .aventureTitle {
-      margin: 0;
-      width: 100%;
-      text-align: center;
-    }
-
-    .contactContainer {
-      padding: 2rem;
-    }
-
-    .contactContainer p {
-      font-size: 20px;
-    }
-
-    .icon {
-      width: 59px;
-      height: 59px;
-    }
     .card p {
       font-size: 18px;
     }
@@ -1758,9 +1784,7 @@ h3{
   .reservationContent {
     flex-direction: column;
   }
-  .slideWrapper{
-    height: 500px;
-  }
+
 }
 
 /* Media query spécifique pour la dimension paysage 1080px x 810px */
@@ -1970,7 +1994,7 @@ h3{
 }
 
 /* Large devices (1000px and below) */
-@media screen and (max-width: var(--breakpoint-lg)) {
+/* @media screen and (max-width: var(--breakpoint-lg)) {
   .hero h1 {
     top: 40%;
     font-size: var(--font-size-xl);
@@ -1986,7 +2010,7 @@ h3{
   .landing {
     height: 70vh;
   }
-}
+} */
 
 /* Medium devices (840px and below) */
 @media screen and (max-width: var(--breakpoint-md)) {
