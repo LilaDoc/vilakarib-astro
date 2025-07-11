@@ -1327,6 +1327,9 @@ h3{
     }
   } */
   @media screen and (max-width: 840px) {
+    .aboutContainer{
+      flex-direction: column;
+    }
     .cardContainer {
       justify-content: center;
       align-items: center;
@@ -1934,6 +1937,9 @@ h3{
 
 /* Medium devices (840px and below) */
 @media screen and (max-width: var(--breakpoint-md)) {
+  .aboutContainer{
+    flex-direction: column;
+  }
   .cardContainer {
     justify-content: center;
     align-items: center;
@@ -2321,6 +2327,9 @@ h3{
 @media screen and (max-width: 840px) {
   .mobileReservationButton {
     display: flex;
+  }
+  .aboutContainer{
+    flex-direction: column;
   }
 }
 
