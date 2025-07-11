@@ -31,11 +31,11 @@ const VideoButton = (props) => {
   }, []);
 
   return (
-    <div
+    <div 
       ref={buttonRef}
       className={`${styles.videoButtonContainer} ${isDark ? styles.dark : ''}`}
     >
-      <button className={styles.videoButton} onClick={() => props.setVideoOpen(true)}>
+      <button aria-label="Découvrez l'expérience en vidéo" className={styles.videoButton} onClick={() => props.setVideoOpen(true)}>
       <div className={styles.videoButtonImageIcon}>
           {/* <img src={videoImage} alt="video" className={styles.videoButtonImage} /> */}
           <span className={`material-symbols-outlined ${styles.videoButtonIcon}`}>play_arrow</span>

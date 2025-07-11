@@ -11,6 +11,7 @@ const Video = forwardRef((props, ref) => {
           muted
           loop
           playsInline
+          aria-label="Vidéo de présentation de la Villa des Karibéan montrant l'extérieur et les environs"
         />
     );
 });

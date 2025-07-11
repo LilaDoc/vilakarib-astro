@@ -47,7 +47,7 @@ const MobileReservationButton = () => {
 
   return (
     <a href="https://www.airbnb.com/l/iMnOLylu">
-      <button 
+      <button aria-label="Réservez votre séjour"
         ref={buttonRef} 
         className={`${styles.mobileReservationButton} ${isDark ? styles.dark : ''}`}
       >

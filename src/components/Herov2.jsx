@@ -79,7 +79,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className={styles.heroArrow}>
-                <a href="#about"><Arrow color="#ffffff" width="100" height="100" /></a>
+                <a aria-label="Plus d'informations" href="#about"><Arrow color="#ffffff" width="100" height="100" /></a>
             </div>
         </div>
     </section>

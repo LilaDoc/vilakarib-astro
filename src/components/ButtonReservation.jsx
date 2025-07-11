@@ -50,7 +50,7 @@ const ButtonReservation = () => {
   }, []);
 
   return (
-    <div ref={buttonRef} className={`${styles.callToActionContainer} ${isDark ? styles.dark : ''}`}>
+    <div aria-label="Réservez votre séjour" ref={buttonRef} className={`${styles.callToActionContainer} ${isDark ? styles.dark : ''}`}>
       <h2>
         <a href="https://www.airbnb.com/l/iMnOLylu">
           Réservez <span className={styles.callToActionSpan}>votre séjour</span>
