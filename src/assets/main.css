@@ -946,8 +946,8 @@ h3{
   cursor: pointer;
 }
   .aroundImage {
-    width: 160px !important;
-    height: 160px !important;
+    width: 160px;
+    height: 160px;
     flex: 0 0 160px;  
     border-radius: 5px;
     background-color: black;
@@ -1566,6 +1566,10 @@ h3{
     .aroundCards{
       flex-direction: column;
     }
+    .aroundText{
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
 
     .card p {
       font-size: 18px;
@@ -1634,6 +1638,15 @@ h3{
     .aroundDistance{
       display: none;
     }
+    .aroundImage{
+      width: 80px;
+      height: 80px;
+    }
+    .aroundImage img{
+      width: 80px;
+      height: 80px;
+    }
+  
     .hidden480px{
       display: none;
     }
