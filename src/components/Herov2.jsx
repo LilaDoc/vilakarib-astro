@@ -53,7 +53,10 @@ const Hero = () => {
             <Video />
         </div>
         <div className={`${styles.backgroundImage} ${styles.hidden}`}>
-            <img src="/images/hero.png" alt="hero" />
+            <video autoPlay muted loop playsInline>
+                <source src="/videos/seavideo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
         </div>
         <div className={styles.heroArrowTitleContainer}>
             <div className={styles.heroTitlesContainer}>
