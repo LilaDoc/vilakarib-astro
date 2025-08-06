@@ -558,7 +558,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 100;
+  z-index: 199;
   background-color: rgba(17, 16, 16, 0.3);
 }
 /* .fullScreenImageClose {
