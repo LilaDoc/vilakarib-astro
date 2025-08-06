@@ -2299,7 +2299,7 @@ h3{
   cursor: pointer;
   border: 1px solid white;
   border-radius: 10px;
-  z-index: 200;
+  z-index: 109;
 }
 
 .mobileReservationButton svg {
